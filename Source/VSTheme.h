@@ -3,18 +3,17 @@
 //  Q Branch LLC
 //
 //  Created by Brent Simmons on 6/26/13.
+//  Edited by Zeeshan Lakhani on 8/16/13.
 //  Copyright (c) 2012 Q Branch LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
-typedef NS_ENUM(NSUInteger, VSTextCaseTransform) {
+typedef NS_ENUM (NSUInteger, VSTextCaseTransform) {
     VSTextCaseTransformNone,
     VSTextCaseTransformUpper,
     VSTextCaseTransformLower
-};
-
+}
 
 @class VSAnimationSpecifier;
 
@@ -44,13 +43,11 @@ typedef NS_ENUM(NSUInteger, VSTextCaseTransform) {
 
 @end
 
-
 @interface VSTheme (Animations)
 
-- (void)animateWithAnimationSpecifierKey:(NSString *)animationSpecifierKey animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion;
+- (void)animateWithAnimationSpecifierKey:(NSString *)animationSpecifierKey animations:(void(^) (void)) animations completion:(void(^) (BOOL finished))completion;
 
 @end
-
 
 @interface VSAnimationSpecifier : NSObject
 
@@ -59,4 +56,3 @@ typedef NS_ENUM(NSUInteger, VSTextCaseTransform) {
 @property (nonatomic, assign) UIViewAnimationOptions curve;
 
 @end
-
