@@ -13,7 +13,7 @@ typedef NS_ENUM (NSUInteger, VSTextCaseTransform) {
     VSTextCaseTransformNone,
     VSTextCaseTransformUpper,
     VSTextCaseTransformLower
-}
+};
 
 @class VSAnimationSpecifier;
 
